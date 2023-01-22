@@ -13,6 +13,7 @@ export type TaskPropsType = {
 
 
 const Task = memo(({task, changeTaskStatus, changeTaskTitle, removeTask}: TaskPropsType) => {
+
     let {id, isDone, title} = {...task}  //= task
 
     const onClickHandler = () => removeTask(id)
