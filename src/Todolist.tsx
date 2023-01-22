@@ -53,7 +53,7 @@ export const Todolist = memo((props: PropsType) =>
     //     tasks = tasks.filter(t => t.isDone === true);
     // }
 
-    let tasks11 = useMemo(() => {
+    let tasks = useMemo(() => {
         let tasks = props.tasks;
         if (props.filter === "active") {
             tasks = tasks.filter(t => t.isDone === false);
